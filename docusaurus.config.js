@@ -1,8 +1,8 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require('prism-react-renderer/themes/vsLight');
+const darkCodeTheme = require('prism-react-renderer/themes/vsDark');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -37,20 +37,21 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        // docs: {
-        //   sidebarPath: require.resolve('./sidebars.js'),
-        //   // Please change this to your repo.
-        //   // Remove this to remove the "edit this page" links.
-        //   editUrl:
-        //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        // },
-        // blog: {
-        //   showReadingTime: true,
-        //   // Please change this to your repo.
-        //   // Remove this to remove the "edit this page" links.
-        //   editUrl:
-        //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        // },
+        docs: {
+          sidebarPath: require.resolve('./sidebars.js')
+          //editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        },
+        blog: {
+           routeBasePath: '/',
+           showReadingTime: true,
+           blogTitle: 'Blog',
+           
+           feedOptions: {
+            type: 'all',
+            copyright: `Copyright © ${new Date().getFullYear()} Jean Carneiro do Nascimento.`
+           }
+          
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -61,22 +62,19 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      //image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Introdução',
-        // logo: {
-        //   alt: 'Jean Carneiro do Nascimento',
-        //   src: 'https://www.gravatar.com/avatar/6c6af18d483c5ee926c130a4aaa24ad9',
-        // },
-        items: [
-          // {
-          //   type: 'docSidebar',
-          //   sidebarId: 'tutorialSidebar',
-          //   position: 'left',
-          //   label: 'Tutorial',
-          // },
-          // {to: '/blog', label: 'Blog', position: 'left'},
+        items: [          
+          {
+            to: '/', 
+            label: 'Início',
+            position: 'left'
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'praticasSidebar',
+            position: 'left',
+            label: 'Práticas',
+          },
           {
             href: 'https://github.com/jeancnasc',
             label: 'GitHub',
@@ -130,7 +128,8 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-      },
+        additionalLanguages: ['java']
+      }
     }),
 };
 
