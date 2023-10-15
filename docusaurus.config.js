@@ -62,13 +62,16 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: "dark",
+        disableSwitch: false
+      },
       navbar: {
-        items: [          
-          {
-            to: '/', 
-            label: 'Início',
-            position: 'left'
-          },
+        style: "dark",
+        logo: {
+          src: "img/favicon-32x32.png"
+        },
+        items: [
           {
             type: 'docSidebar',
             sidebarId: 'praticasSidebar',
