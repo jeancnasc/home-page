@@ -394,7 +394,7 @@ Em muitas linguagens todas as exceções herdem de uma única classe. Em Java to
 
 ## Conclusão
 
-Qualquer programador que deseje produzir código de alta qualidade deve ter o conhecimento de trabalhar com exceções de forma efetiva, para isso é essencial distinguir o exceções genéricas, identificar seu nível de abstração e optar por um tratamento do mesmo nível.
+Qualquer programador que deseje produzir código de alta qualidade deve ter o conhecimento de trabalhar com exceções de forma efetiva, para isso é essencial identificar o nível de abstração da exceção capturada e optar por um tratamento do mesmo nível.
 
 ## Referência
 
