@@ -3,7 +3,7 @@ title: Exceções Genéricas
 description: 'Exceções Genéricas'
 ---
 
-Um bom tratamento de erro exige do desenvolvedor a compreensão sobre quando e como erros acontecem, e os detalhes envolvidos no seu tratamento. Essa é uma tarefa desafiante se levarmos em conta a diversidade de erros que a aplicação pode enfrentar. Para auxiliar nisso, irei explicar o que chamo de exceções "genérias", um conceito que acredito ser essencial para desenvolver um tratamento de erros eficiente, além de descrever um problema comum: tratar uma exceção "genérica" de forma específica.
+Um bom tratamento de erro exige do desenvolvedor a compreensão sobre quando e como erros acontecem, e os detalhes envolvidos no seu tratamento. Essa é uma tarefa desafiante se levarmos em conta a diversidade de erros que a aplicação pode enfrentar. Para auxiliar nisso, irei explicar o que chamo de exceções "genéricas", um conceito que acredito ser essencial para desenvolver um tratamento de erros eficiente, além de descrever um problema comum: tratar uma exceção "genérica" de forma específica.
 
 ## Definindo o problema
 
@@ -114,7 +114,7 @@ at com.codificandonamarra.App3.main(App3.java:16)
 
 :::info Definição: Exceção "genérica"
 
-Eu defino exceção "genérica" da seguinte forma: é aquela cujo nível de abstração não permite determinar com exatidão o motivo do seu lançamento. Em termos mais leigos, o nome da exceção não contem o motivo exato que resultou no lançamento da exceção.
+Eu defino exceção "genérica" da seguinte forma: é aquela cujo nível de abstração não permite determinar com exatidão o motivo do seu lançamento. Em termos mais leigos, o nome da exceção não contém o motivo exato que resultou no lançamento da exceção.
 
 :::
 
@@ -135,7 +135,7 @@ public class PessoaRepositorio {
 }
 ```
 
-Esse erro é muito sutil e geralmente difícil de detectar, pois a taxa de exceções por consulta vazia é muitas vezes maior que outras exceções. Ele pode provocar comportamentos estranhos e desencadear outros erros pelo sistema, image a situação:
+Esse erro é muito sutil e geralmente difícil de detectar, pois a taxa de exceções por consulta vazia é muitas vezes maior que outras exceções. Ele pode provocar comportamentos estranhos e desencadear outros erros pelo sistema, imagine a situação:
 
 - O usuário solicita um novo cadastro no sistema (esse usuário já possui um cadastro e o sistema deveria negar um novo);
 - O sistema usa o método do exemplo para consultar se o CPF já tem um cadastro;
@@ -191,7 +191,7 @@ at com.codificandonamarra.App4.main(App4.java:16)
 
 :::danger Evite fazer: Escolher o tratamento correto a partir de atributos da exceção
 
-Poderíamos verificar a mensagem dentro da exceção para tomar uma decisão sobre o tratamento correto, no entanto esse campo não é projetado especificamente para isso, por exemplo o lançador pode alterar a mensagem sem alterar o motivo de seu lançamento. De fato, a partir da versão 17 do Java, a mensagem de algumas exceções lançadas pela JVM foram alteradas para melhorar o diagnóstico do erro.
+Poderíamos verificar a mensagem dentro da exceção para tomar uma decisão sobre o tratamento correto, no entanto esse campo não é projetado especificamente para isso, por exemplo o lançador pode alterar a mensagem sem alterar o motivo de seu lançamento. De fato, a partir da versão 17 do Java, as mensagens de algumas exceções lançadas pela JVM foram alteradas para melhorar o diagnóstico do erro.
 
 Exceções podem definir outros campos além da mensagem, alguns desse campos podem ser projetados para tomar decisões de tratamento de erro. Em geral, eu prefiro não tomar decisões com base nesses campos, a não ser para formatar ou incluí-los na mensagem ao usuário.
 
@@ -384,7 +384,7 @@ Note que a exceção criada não é específica, seu nível de abstração não 
 
 O exemplo anterior pode ter suscitado uma dúvida sobre o que é melhor: lançar uma exceção específica ou uma exceção genérica. Note que que optar por sempre lançar exceções específicas significa criar um conjunto grande de classe de exceção e, como qualquer código, existe certo custo envolvido em sua manutenção, isso pode levar a uma sobrecarga desnecessária ao desenvolvimento. Ao invés disso, Feathers (Em MARTIN, Código Limpo, 2011, p. 107) sugere: "defina as classes de exceção segundo as necessidades do chamador".
 
-Imagine um formulário de cadastro que emite alertas sobre a validade dos valores inseridos pelo usuário, para cada campo é criada uma exceção específica: CpfInvalidoException para o campo CPF, EmailInvalidoException para o campo e-mail, NomeDeUsuarioJaExisteException para o nome do usuário. Para todas essas exceções, o chamador, vai aplicar um único tratamento possível: informar o usuário sobre o problema para que ele mesmo o corrija. Portando, pode-se substituir todas essas exceções por uma única exceção CampoInvalidoException sem grandes prejuízo, afinal exite apenas um único tratamento.
+Imagine um formulário de cadastro que emite alertas sobre a validade dos valores inseridos pelo usuário, para cada campo é criada uma exceção específica: CpfInvalidoException para o campo CPF, EmailInvalidoException para o campo e-mail, NomeDeUsuarioJaExisteException para o nome do usuário. Para todas essas exceções, o chamador, vai aplicar um único tratamento possível: informar o usuário sobre o problema para que ele mesmo o corrija. Portando, pode-se substituir todas essas exceções por uma única exceção CampoInvalidoException sem grande prejuízo, afinal existe apenas um único tratamento.
 
 Por outro lado, usar exceções genéricas pode dificultar o tratamento mais específico. Foi isso que aconteceu no exemplo da sessão [Acertando os níveis de abstração](#acertando-os-níveis-de-abstração), a JVM não lançava a exceção especifica que precisávamos, ela não esperava que iriamos precisar dela. Isso é um problema para qualquer um que desenvolve código compartilhado, como bibliotecas: é difícil definir as classes conforme o chamador, pois não o conhecemos. Note que nem sempre o contorno do lançamento de uma exceção genérica está disponível e de fácil implementação, porém, traduzir ume exceção específica para uma mais genérica é simples. Portanto, nessa situação, pode ser preferível optar por lançar exceções mais específicas, e aceitar os custos de manter uma hierarquia grande de exceções consistente.
 
