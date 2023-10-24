@@ -1,8 +1,8 @@
 ---
-description: 'Tratamento de Erro'
+title: Tratamento de Erro
+description: 'Práticas que adoto para tornar minhas aplicações mais simples de depurara e monitorar, evitando longas sessões de depuração árdua para determinar a causa de um erro.'
+keywords: [erro, error, tratamento de erro, excecao, exception, boas praticas]
 ---
-
-# Tratamento de Erro
 
 Durante o ciclo de vida de uma aplicação, a presença de erros é inevitável, seja na fase de desenvolvimento ou produção. Erros são partes integrais do funcionamento de um software, independentemente do quão testado e rígido seja o controle de qualidade, esperar que um programa nunca falhe é, no mínimo, ingenuidade. De fato, para muitos projetos é inviável testar cada parte do software, em cada situação possível, imaginável ou inimaginável.
 

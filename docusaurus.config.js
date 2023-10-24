@@ -11,7 +11,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://jeancnasc.github.io',
+  url: 'https://jeannascimento.dev.br',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -62,6 +62,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      metadata: [{name: 'keywords', content: 'blog, analise e desenvolvimento de sistemas, software, engenharia de software, codigo limpo, clean code, arquitetura lima, clean architecture, domain driven design, ddd, test driven development, tdd'}],
       colorMode: {
         defaultMode: "dark",
         disableSwitch: false

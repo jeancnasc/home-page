@@ -1,8 +1,7 @@
 ---
-description: 'Práticas'
+title: 'Práticas'
+description: 'Práticas que aplico durante o projeto e desenvolvimento de software para obter um código de qualidade, que seja fácil de entender, depurar e manter.'
 ---
-
-# Práticas
 
 Nesta seção vou descrever algumas práticas que aplico durante o projeto e desenvolvimento de software para obter um código de qualidade, que seja fácil de entender, depurar e manter. Muitas das práticas que serão apresentadas aqui já são bem conhecidas e descritas em grandes obras da área, como Código Limpo e Arquitetura Limpa, ambos de Robert C. Martin; Refatoração, de Martin Fowler; entre outras. Outras práticas são oriundas da minha própria experiência como desenvolvedor de software.
 

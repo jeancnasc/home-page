@@ -1,6 +1,7 @@
 ---
 title: Exceções Genéricas
-description: 'Exceções Genéricas'
+description: 'Um bom tratamento de erro exige do desenvolvedor a compreensão sobre quando e como erros acontecem, aqui irei explicar o que chamo de exceções "genéricas", além de descrever um problema comum: tratar uma exceção "genérica" de forma específica.'
+keywords: [erro, error, tratamento de erro, excecao, exception, boas praticas]
 ---
 
 Um bom tratamento de erro exige do desenvolvedor a compreensão sobre quando e como erros acontecem, e os detalhes envolvidos no seu tratamento. Essa é uma tarefa desafiante se levarmos em conta a diversidade de erros que a aplicação pode enfrentar. Para auxiliar nisso, irei explicar o que chamo de exceções "genéricas", um conceito que acredito ser essencial para desenvolver um tratamento de erros eficiente, além de descrever um problema comum: tratar uma exceção "genérica" de forma específica.
