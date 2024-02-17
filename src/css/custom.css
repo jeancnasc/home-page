@@ -36,3 +36,8 @@
   overflow: hidden;
   border-radius: 50%;
 }
+
+.markdown > p {
+  text-align: justify;
+  hyphens: auto;
+}
