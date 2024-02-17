@@ -1,8 +1,9 @@
 ---
 title: 'EditorConfig: mantenha o estilo de codifição consistente no seu time'
-description: Tratando exceções com eficiência
+description: EditorConfig é uma ferramenta que ajuda a manter estilos de codificação consistentes para vários desenvolvedores que trabalham no mesmo projeto em diferentes editores e IDEs.
 slug: editorconfig-mante
-tags: [tratamento-de-erro, praticas]
+tags: [boas praticas, ferramentas]
+keywords: [editorconfig, boas praticas, code style, dev tools]
 hide_table_of_contents: false
 ---
 
