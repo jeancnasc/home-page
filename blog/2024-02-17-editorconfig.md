@@ -1,12 +1,11 @@
 ---
 title: 'EditorConfig: mantenha o estilo de codifição consistente no seu time'
 description: EditorConfig é uma ferramenta que ajuda a manter estilos de codificação consistentes para vários desenvolvedores que trabalham no mesmo projeto em diferentes editores e IDEs.
-slug: editorconfig-mante
+slug: editorconfig-estilo-codificacao-consistente
 tags: [boas praticas, ferramentas]
 keywords: [editorconfig, boas praticas, code style, dev tools]
 hide_table_of_contents: false
 ---
-
 EditorConfig é uma ferramenta que ajuda a manter estilos de codificação consistentes para vários desenvolvedores que trabalham no mesmo projeto em diferentes editores e IDEs. Ele consiste em um formato de arquivo para definir estilos de codificação e uma coleção de plugins de editor de texto que permitem que os editores leiam o formato de arquivo e sigam os estilos definidos. Os arquivos EditorConfig são facilmente legíveis e funcionam bem com sistemas de controle de versão.
 
 <!-- truncate -->
