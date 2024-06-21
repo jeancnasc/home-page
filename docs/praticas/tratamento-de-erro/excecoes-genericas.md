@@ -93,7 +93,7 @@ for (int c = 0; c <= 100; c++) {
 }
 ```
 
-Agora a saída deixa claro a causa falha: um acesso indevido a uma posição inexistente do matriz **resultado**. Podemos corrigir o problema alterando o comparador usado na condição do laço de repetição de menor ou igual (<=) para menor (<). Porém, vamos nos concentrar em outro erro: o tratamento de exceção "genérica".
+Agora a saída deixa claro a causa falha: um acesso indevido a uma posição inexistente do matriz **resultado**. Podemos corrigir o problema alterando o comparador usado na condição do laço de repetição de menor ou igual (\<=) para menor (\<). Porém, vamos nos concentrar em outro erro: o tratamento de exceção "genérica".
 
 ```text
 ...
