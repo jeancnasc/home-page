@@ -37,6 +37,13 @@ echo 'Instalando o PowerShell'
 winget install 'Microsoft.PowerShell'
 ```
 
+## Sincronizar arquivos do PowerShell
+
+O `PowerShell` é amigável a sincronização, ele armazena as configurações dentro da pasta do OneDrive e nenhuma configuração é necessária.
+
+## Link do Projeto no Github
+
+Os arquivos desse projeto serão armazenados no [GitHub](https://github.com/jeancnasc/post-install)
 
 ## Referências
 
