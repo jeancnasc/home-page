@@ -9,6 +9,8 @@ hide_table_of_contents: false
 
 Há algum tempo comecei a ler "Trabalhando eficaz com código legado", de Michael C. Feathers, quando me deparei, ainda no capítulo de apresentação, com sua definição sobre *código legado*: **"*código legado* é simplesmente código sem teste"**. Em resumo, Feathers relaciona *código legado* a código difícil de manter, como código sem testes é difícil de manter logo ele é legado. Já vi muitas maneiras de definir *código legado*, mas essa, sem dúvidas, é a mais impactante. Mesmo achando a definição coerente, uma mistura de descrença e dúvida vieram a minha cabeça.
 
+<!-- truncate -->
+
 Em primeiro lugar, como adepto do TDD (Test Driven Development), reconheço a importância de testes e seu impacto no processo de desenvolvimento de software, e que código sem teste dificilmente será fácil de manter, independente do esforço e disciplina do time em manter tudo limpo, organizado e documentado. **Mas, a presença de testes realmente garante que o código é fácil de manter?** 
 
 Por experiência posso afirmar que não, **teste também é código e passível de se tornar difícil de manter**, já presenciei software cujos testes estavam tão difíceis de manter que o código que eles se propunham a testar, geralmente porque os desenvolvedores não dedicavam aos testes o mesmo esforço que dedicavam para desenvolver o código. **Teste também é parte do software e você também deve dedicar um tempo para deixá-lo limpo e organizado**. Mas podemos compreender que **Feathers não fala de qualquer teste, mas de bons testes de unidade**.

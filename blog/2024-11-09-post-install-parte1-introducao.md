@@ -11,6 +11,8 @@ Uma tarefa incomoda após a troca de máquina, ou reinstalação da mesma, é in
  
 O objeto desse projeto é criar scripts que automatizem etapas de configuração pós-instalação para instalar e configurar minhas maquinas, e compartilhar o resultado para que qualquer um possa adaptá-los para suas necessidades. A minha pretensão é separa os scripts em categorias, para organizar, e para garantir que eu possa executar etapas em separado caso algo dê errado.
 
+<!-- truncate -->
+
 ## PowerShell
 
 A primeira decisão sobre esse projeto é em que linguagem os scripts serão escritos. Em primeiro lugar, vou considerar que minhas máquinas vão usar o sistema `Windows` - de minha preferência pessoal -, portanto, entre as opções estão `Batch` e `PowerShell`, mas também seria possível tentar usar `Python` e, com alguma dificuldade, `Shell Script`.
