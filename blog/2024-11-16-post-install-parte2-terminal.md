@@ -14,6 +14,8 @@ Nessa postagem, vou adicionar ao script de pós-instalação, iniciado na [parte
 
 Para manter tudo organizando vou criar um script em separado para essa etapa, chamado `Install.Terminal.ps1`.
 
+<!-- truncate -->
+
 ## Pasta de Configuração
 
 Como citado na postagem anterior, vou usar um armazenamento na nuvem, no meu caso o `OneDrive`, para fazer backup das configurações e mante-las sincronizadas entre reinstalações, e entre os meus computadores. O primeiro passo para isso é criar uma pasta que irá armazenar todas as configurações dentro da pasta sincronizada na nuvem. Dentro dessa pasta serão criadas subpastas para cada programa que instalarmos.
