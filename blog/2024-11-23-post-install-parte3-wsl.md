@@ -1,6 +1,6 @@
 ---
 title: 'Post Install (Parte 3): Instalar o WSL'
-description: 'Nessa postagem eu adiciono ao projeto post install a instalação do WSL e configuração do Oh My Posh no WSL'
+description: 'Nessa postagem eu adiciono ao projeto post install a instalação do WSL e configuração do Oh My Posh no bash'
 slug: post-install-instalar-wsl
 tags: [post install, windows, powershell, oh my posh, wsl]
 keywords: [post install, windows, powershell, oh my posh, wsl]
