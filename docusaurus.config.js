@@ -76,9 +76,9 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'praticasSidebar',
+            sidebarId: 'devSidebar',
             position: 'left',
-            label: 'Práticas',
+            label: 'Desenvolvimendo de Sofware',
           },
           {
             href: 'https://github.com/jeancnasc',
