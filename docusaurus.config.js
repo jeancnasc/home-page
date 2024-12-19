@@ -133,9 +133,13 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-        additionalLanguages: ['batch', 'java', 'powershell']
+        additionalLanguages: ['batch', 'java', 'powershell','mermaid']
       }
     }),
+    markdown: {
+      mermaid: true
+    },
+    themes: ['@docusaurus/theme-mermaid']
 };
 
 module.exports = config;
