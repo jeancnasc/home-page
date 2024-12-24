@@ -1,6 +1,6 @@
 ---
 title: 'Desenvolvimento de Software'
-description: 'Conceitos de desenvolvimento de sofware e práticas que aplico durante para obter um código de qualidade, que seja fácil de entender, depurar e manter.'
+description: 'Conceitos de desenvolvimento de software e práticas que aplico durante para obter um código de qualidade, que seja fácil de entender, depurar e manter.'
 ---
 
 Nesta seção vou descrever conceitos relacionados a engenharia e desenvolvimento de software, expondo minhas próprias opiniões sobre eles, além de práticas que aplico para obter um código de qualidade, que seja fácil de entender, depurar e manter. Muito do que será exposto aqui já é conhecido e descrito em grandes obras da área, como: Engenharia de software, de Ian Sommerville; o livro homônimo de Roger S. Pressman; Código Limpo e Arquitetura Limpa, ambos de Robert C. Martin; Refatoração, de Martin Fowler; entre outras. Outras práticas são oriundas da minha própria experiência como desenvolvedor de software.

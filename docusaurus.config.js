@@ -78,7 +78,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'devSidebar',
             position: 'left',
-            label: 'Desenvolvimendo de Sofware',
+            label: 'Desenvolvimendo de Software',
           },
           {
             href: 'https://github.com/jeancnasc',

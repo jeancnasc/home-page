@@ -3,7 +3,7 @@ title: 'Uma definição diferente para código legado'
 description: Será que a ausência de teste faz um software ser automaticamente legado?
 slug: uma-definicao-diferente-para-codigo-legado
 tags: [código legado, conceitos, testes]
-keywords: [dev, sofware-legado, codigo-legado, legado, legacy-software, legacy-code, legacy, teste, tests, teste-unidade, unit-tests]
+keywords: [dev, software-legado, codigo-legado, legado, legacy-software, legacy-code, legacy, teste, tests, teste-unidade, unit-tests]
 hide_table_of_contents: false
 ---
 
