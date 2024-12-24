@@ -1,7 +1,7 @@
 ---
-title: Código Legado
-description: ''
-keywords: [legado]
+title: Software Legado
+description: 'Software legado é um termo bastante difundido na engenharia de software para se referir a produtos foram concebidos a muito tempo e que, portanto, utilizam padrões e tecnologias em obsoletas, mas que seu alto valor agregado para o negócio impões grandes desafios para sua substituição'
+keywords: [dev, software-legado, codigo-legado, legado, legacy-software, legacy-code, legacy, engenharia de software]
 ---
 
 ```mermaid
@@ -26,11 +26,6 @@ mindmap
     
     para Feathers: código sem testes
     
-    
-      
-        
-
-
 ```
 
 ***Código legado***, ou *software legado*, é um termo bastante difundido na engenharia de software para se referir, em geral, a software produzido há muito tempo. No entanto, as características consideradas para determinar se uma base de código é legada vão além, cada time tem ideias próprias sobre o que torna uma base de código legada. Nesse artigo vou apresentar, na minha experiência, quais características são usadas para definir uma base de código legada.
@@ -72,6 +67,6 @@ Em minha experiência, o termo *código legado* é empregado para destacar a pre
 
 ## Referências
 
-FEATHERS, Michael. Trabalhando eficaz com código legado. Editora Bookman, 2013.
-PRESSMAN, Roger S. Engenharia de Software: Uma abordagem profissional 7ª ed. AMGH Editora Ltda, 2011
-SOMMERVILLE, Ian. Engenharia de Software 10ª ed. Pearson Education do Brasil,2018
+FEATHERS, Michael. Trabalhando eficaz com código legado. Editora Bookman, 2013.  
+PRESSMAN, Roger S. Engenharia de Software: Uma abordagem profissional 7ª ed. AMGH Editora Ltda, 2011.  
+SOMMERVILLE, Ian. Engenharia de Software 10ª ed. Pearson Education do Brasil, 2018.
