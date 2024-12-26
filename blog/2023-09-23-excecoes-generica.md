@@ -11,4 +11,4 @@ Nessa nova prática apresento um problema comum no desenvolvimento de software: 
  
 [**Leia mais**](/docs/desenvolvimento_software/tratamento-de-erro/excecoes-genericas)
 
-
+<!-- truncate -->
